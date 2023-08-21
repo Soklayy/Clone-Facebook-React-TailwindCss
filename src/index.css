@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@layer base {
+
+
+    html {
+        font-family: 'Maven Pro', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .background-custome {
+        background-image: linear-gradient(79deg, #b184ff, #fcedfc 48%, #84c7ff);
+    }
+
+    .left-bar::-webkit-scrollbar {
+        width: 10px;
+        
+    }
+
+    .left-bar:hover::-webkit-scrollbar-track:hover {
+        background: #B9B7BD;
+    }
+
+    .left-bar:hover::-webkit-scrollbar-thumb {
+        background: rgb(216, 214, 214);
+    }
+
 }
